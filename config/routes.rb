@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :follow_restaurants
+  resources :follow_users
+  resources :foods
+  resources :restaurant_reviews
+  resources :food_reviews
+  resources :restaurants
+  resources :users
   get 'home/index'
 
   root 'home#index'

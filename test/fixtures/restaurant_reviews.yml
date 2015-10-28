@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parking: 1
+  service: 1
+  hygiene: 1
+  comment: MyText
+  user_id: 1
+  restaurant_id: 1
+
+two:
+  parking: 1
+  service: 1
+  hygiene: 1
+  comment: MyText
+  user_id: 1
+  restaurant_id: 1
