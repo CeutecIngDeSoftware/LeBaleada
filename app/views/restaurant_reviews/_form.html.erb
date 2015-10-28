@@ -1,0 +1,41 @@
+<%= form_for(@restaurant_review) do |f| %>
+  <% if @restaurant_review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@restaurant_review.errors.count, "error") %> prohibited this restaurant_review from being saved:</h2>
+
+      <ul>
+      <% @restaurant_review.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :parking %><br>
+    <%= f.number_field :parking %>
+  </div>
+  <div class="field">
+    <%= f.label :service %><br>
+    <%= f.number_field :service %>
+  </div>
+  <div class="field">
+    <%= f.label :hygiene %><br>
+    <%= f.number_field :hygiene %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_area :comment %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :restaurant_id %><br>
+    <%= f.number_field :restaurant_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

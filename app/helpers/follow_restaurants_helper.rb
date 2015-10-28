@@ -1,0 +1,2 @@
+module FollowRestaurantsHelper
+end
