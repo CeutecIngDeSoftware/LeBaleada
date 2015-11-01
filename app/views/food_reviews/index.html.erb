@@ -20,7 +20,7 @@
     <% @food_reviews.each do |food_review| %>
       <tr>
         <td><%= food_review.food_id %></td>
-        <td><%= food_review.real_pic %></td>
+        <td><%= image_tag(food_review.real_pic_url) if food_review.real_pic? %></td>
         <td><%= food_review.price %></td>
         <td><%= food_review.taste %></td>
         <td><%= food_review.quantity %></td>

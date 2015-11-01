@@ -25,6 +25,7 @@ class FoodReviewsController < ApplicationController
   # POST /food_reviews.json
   def create
     @food_review = FoodReview.new(food_review_params)
+    @food_review.real_pic = params[:real_pic]
 
     respond_to do |format|
       if @food_review.save

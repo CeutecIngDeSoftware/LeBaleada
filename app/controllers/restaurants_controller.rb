@@ -25,6 +25,7 @@ class RestaurantsController < ApplicationController
   # POST /restaurants.json
   def create
     @restaurant = Restaurant.new(restaurant_params)
+    @restaurant.map_icon = params[:map_icon]
 
     respond_to do |format|
       if @restaurant.save
