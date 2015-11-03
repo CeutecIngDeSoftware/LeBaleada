@@ -16,7 +16,7 @@
     <% @foods.each do |food| %>
       <tr>
         <td><%= food.name %></td>
-        <td><%= food.promo_pic %></td>
+        <td><%= image_tag(food.promo_pic_url) if food.promo_pic? %></td>
         <td><%= food.restaurant_id %></td>
         <td><%= link_to 'Show', food %></td>
         <td><%= link_to 'Edit', edit_food_path(food) %></td>

@@ -7,7 +7,7 @@
 
 <p>
   <strong>Real pic:</strong>
-  <%= @food_review.real_pic %>
+  <%= image_tag(@food_review.real_pic_url) if @food_review.real_pic? %>
 </p>
 
 <p>

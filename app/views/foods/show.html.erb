@@ -7,7 +7,7 @@
 
 <p>
   <strong>Promo pic:</strong>
-  <%= @food.promo_pic %>
+  <%= image_tag(@food.promo_pic_url) if @food.promo_pic? %>
 </p>
 
 <p>
