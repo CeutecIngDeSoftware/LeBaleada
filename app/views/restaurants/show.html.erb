@@ -17,7 +17,7 @@
 
 <p>
   <strong>Map icon:</strong>
-  <%= image_tag(@restaurant.map_icon_url) if @restaurant.map_icon? %>
+  <a href="<%= @restaurant.map_icon %>"><%= image_tag @restaurant.map_icon_url(:med_thumb) if @restaurant.map_icon? %></a>
 </p>
 
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
