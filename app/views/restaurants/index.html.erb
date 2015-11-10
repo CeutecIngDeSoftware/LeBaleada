@@ -53,7 +53,7 @@ handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
         "width":  50,
         "height": 50
       },
-      "infowindow": "Test: <a href='https://www.github.com'>ir a github</a>"
+      "infowindow": "<%=restaurant.name%> <a href='/restaurants/<%=restaurant.id%>'>Show</a>"
     },
 <% end %>
   ]);
